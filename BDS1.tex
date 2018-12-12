@@ -1,0 +1,76 @@
+\documentclass[20pt,letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{blindtext}
+\usepackage[usenames, dvipsnames]{color}
+
+
+\author{Jake DeSantis}
+\begin{document}
+
+\Huge
+
+\begin{center}
+\textbf{Correct Calculation:}
+
+\end{center}
+
+
+\LARGE
+
+$$
+Trade = 
+\frac{N \cdot W_{live}} {CV_{live}} = 
+\frac{N \cdot W_{rebal} \cdot \frac{\textcolor{green}{P_{live}}}{P_{rebal}}} {\textcolor{green}{P_{live}} \cdot M}
+$$
+
+\vspace{10mm}
+
+
+\begin{center}
+
+\Large
+\textbf{Or:}
+\LARGE
+
+$$
+Trade = 
+\frac{N \cdot W_{live}} {CV_{live}} = 
+\frac{N \cdot W_{rebal} \cdot \frac{\textcolor{blue}{P_{settle}}}{P_{rebal}}} {\textcolor{blue}{P_{settle}} \cdot M}
+$$
+
+\vspace{20mm}
+
+\end{center}
+\Huge
+\begin{center}
+\textbf{Bloomberg BDS:}
+\end{center}
+
+\LARGE
+
+$$
+Trade = 
+\frac{N \cdot W_{live}} {CV_{live}} = 
+\frac{N \cdot W_{rebal} \cdot \frac{\textcolor{red}{P_{settle}}}{P_{rebal}}} {\textcolor{red}{P_{live}} \cdot M}
+$$
+
+\vspace{20mm}
+
+
+
+\normalsize
+
+\begin{align*}
+  \text{where}~Trade &= \text{Trade Required (Contracts)}\\
+  N &= \text{Notional (USD)} \\
+  W &= \text{Weight (Percent)}\\
+  CV &= \text{Contract Value (USD/Contract)}\\
+   P &= \text{Price (USD/Unit)}\\
+   M &= \text{Multiplier (Unit/Contract)}
+\end{align*}
+
+
+\end{document}
